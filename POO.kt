@@ -1,8 +1,8 @@
-// la clase recibiendo parametros, esta forma es mas limitada
-// que usar constructores
+// la clase recibiendo parametros, esta forma es mas limitada que usar constructores
 // class Frutas(color:String, sabor:String, precio:Int){
-    // la clase por defecto es de tipo final, osea no es heredable por otra clase
-    // o puede ser de tipo open
+// la clase por defecto es de tipo final, osea no es heredable por otra clase
+// o puede ser de tipo open
+
    open class Frutas() {
 
     var color: String = ""
@@ -15,6 +15,8 @@
     //     this.sabor = sabor
     //     this.precio = precio
     // }
+
+    // posee sobre carga de constructores
 
     constructor (color: String, sabor: String, precio: Int) : this() {
 
@@ -51,15 +53,17 @@ class FrutaConGrasa() : Frutas() {
     }
 }
 
+// otra clase definida por la función main unica en cada clase
+
 fun main(args: Array<String>) {
 
-    var manzana = Frutas("rojo", "dulce", 4)
+    var manzana = Frutas("verde", "amargo", 4)
 
-    println(manzana.color)
+    println("el color de la manzana es: " + manzana.color)
     manzana.Pudrirse(null)
 
     var paltaConGrasa = FrutaConGrasa(45)
-    paltaConGrasa.color = "verde"
-    println(paltaConGrasa.color)
-    paltaConGrasa.Pudrirse("palta")
+    paltaConGrasa.color = "negra"
+    println("el color de la palta es :" + paltaConGrasa.color)
+    paltaConGrasa.Pudrirse("palta")    
 }
