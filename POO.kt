@@ -1,5 +1,6 @@
 // la clase recibiendo parametros, esta forma es mas limitada que usar constructores
 // class Frutas(color:String, sabor:String, precio:Int){
+    
 // la clase por defecto es de tipo final, osea no es heredable por otra clase
 // o puede ser de tipo open
 
@@ -36,8 +37,11 @@
     fun Pudrirse(nombre: String?) {
 
         if (!nombre.isNullOrEmpty()) {
+
             println("La $nombre se pudre")
+            
         } else {
+
             println("La fruta se pudre")
         }
     }
@@ -65,5 +69,6 @@ fun main(args: Array<String>) {
     var paltaConGrasa = FrutaConGrasa(45)
     paltaConGrasa.color = "negra"
     println("el color de la palta es :" + paltaConGrasa.color)
+    println("la cantidad de grasa de la palta es :" + paltaConGrasa.cantidadGrasa)
     paltaConGrasa.Pudrirse("palta")    
 }

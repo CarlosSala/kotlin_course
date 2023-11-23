@@ -22,7 +22,6 @@
         */
 
        // var, it's used with mutable variables
-
        var num1: Byte = 127
        var num2: Short = 32762
        var num3: Int = 10
@@ -32,13 +31,10 @@
        println("El modulo de $num2 % $num1 es: ${num2.toDouble() % num1.toDouble()}")
 
        // Unit operators, only when unit operator is prefix, it is used immediately
-
-       println("para el numero: ${num3++}")
-       println("El incremento PostFijo es: ${num3}")
+       println("para el numero: ${num3++}, incremento postfijo es: ${num3}")
        println("Incremento PreFijo de $num3 es: ${++num3}")
 
        // val, it's used with immutable variables or also called constants
-
        var age: Int = 24
        var my_char: Char = '5'
        var text: String = "age is: "
@@ -58,16 +54,16 @@
        // casting
        var charToInt: Int = my_char.digitToInt()
        println(charToInt)
+
        // java method
        println(Character.getNumericValue(my_char)) // getNumericValue(number)
        println(text[0])
-
 
        // arrays
        var arregloInt: Array < Int > = arrayOf(1, 2, 3)
        var arregloString: Array < String > = arrayOf("carlos", "sole", "Dany")
        var arregloAny = arrayOf("carlos", 12, 56)
-        println(args.size)
+       println(args.size)
        println(arregloInt[0])
        println(arregloString[2])
        println(arregloAny[0])

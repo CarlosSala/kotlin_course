@@ -19,10 +19,15 @@ fun main(args: Array<String>) {
     println("El promedio es $prom")
 
     if (prom >= 4) {
+
         println("Aprueba")
+
     } else if (prom in 3.0..3.9) {
+        
         println("Debe recuperar")
+
     } else {
+        
         println("Reprueba")
     }
 
@@ -35,6 +40,7 @@ fun main(args: Array<String>) {
 
     // when similar a switch en otros lenguajes
     val calificacion: Int = 3
+
     var resena =  when (calificacion) {
 
         1 -> "pesimo servicio"
@@ -69,9 +75,8 @@ fun main(args: Array<String>) {
     var chain: Boolean = 'e' in 'a'..'c'
     println("La letra e esta dentro del intervalo a..c : $chain")
 
-    // el Ciclo for
-
-    for(i in 1..10) println(i)
+    // ciclo for
+    for(i in 1..5) println(i)
 
     // other example cicle for
 
